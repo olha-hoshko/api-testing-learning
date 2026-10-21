@@ -1,0 +1,23 @@
+{
+  "name": "api-testing-learning",
+  "version": "0.0.1",
+  "description": "",
+  "homepage": "https://github.com/olha-hoshko/api-testing-learning#readme",
+  "bugs": {
+    "url": "https://github.com/olha-hoshko/api-testing-learning/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olha-hoshko/api-testing-learning.git"
+  },
+  "license": "ISC",
+  "author": "Olha Hoshko",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {},
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  }
+}
