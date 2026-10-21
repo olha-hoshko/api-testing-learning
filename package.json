@@ -1,7 +1,8 @@
 {
   "name": "api-testing-learning",
   "version": "0.0.1",
-  "description": "",
+  "private": true,
+  "description": "Small Playwright + Typescript project to learn API testing",
   "homepage": "https://github.com/olha-hoshko/api-testing-learning#readme",
   "bugs": {
     "url": "https://github.com/olha-hoshko/api-testing-learning/issues"
@@ -13,11 +14,21 @@
   "license": "ISC",
   "author": "Olha Hoshko",
   "type": "commonjs",
-  "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test",
+    "test:auth": "playwright test --grep @auth",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report"
+  },
   "devDependencies": {
     "@playwright/test": "^1.64.1",
     "@types/node": "^26.6.5",
     "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.8"
   }
 }
